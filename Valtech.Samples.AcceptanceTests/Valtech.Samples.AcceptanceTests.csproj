@@ -100,7 +100,6 @@
       <DependentUpon>AboutPage.feature</DependentUpon>
     </Compile>
     <Compile Include="Pages\AboutPage.cs" />
-    <Compile Include="SpecFlowNUnitExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
