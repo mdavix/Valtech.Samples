@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valtech.Samples.Website", "Valtech.Samples\Valtech.Samples.Website.csproj", "{5F6F7390-AB27-457E-AA4F-0557FA9C40A2}"
 EndProject
@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B66724
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valtech.Samples.BupaGlobal.AcceptanceTests", "Valtech.Samples.BupaGlobal.AcceptanceTests\Valtech.Samples.BupaGlobal.AcceptanceTests.csproj", "{A27316AC-E3A0-4DC7-84E2-6125CFB77814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{9F3509E8-3419-4889-B635-9653B4BADE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3509E8-3419-4889-B635-9653B4BADE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3509E8-3419-4889-B635-9653B4BADE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A27316AC-E3A0-4DC7-84E2-6125CFB77814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A27316AC-E3A0-4DC7-84E2-6125CFB77814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A27316AC-E3A0-4DC7-84E2-6125CFB77814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A27316AC-E3A0-4DC7-84E2-6125CFB77814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

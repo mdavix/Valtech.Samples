@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9F3509E8-3419-4889-B635-9653B4BADE5C}</ProjectGuid>
+    <ProjectGuid>{A27316AC-E3A0-4DC7-84E2-6125CFB77814}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Valtech.Samples.AcceptanceTests</RootNamespace>
-    <AssemblyName>Valtech.Samples.AcceptanceTests</AssemblyName>
+    <RootNamespace>Valtech.Samples.BG.AcceptanceTests</RootNamespace>
+    <AssemblyName>Valtech.Samples.BG.AcceptanceTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -91,23 +91,28 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Scenarios\AboutPage.feature.cs">
+    <Compile Include="Class1.cs" />
+    <Compile Include="Pages\BGBasePage.cs" />
+    <Compile Include="Pages\BusinessHealthInsurance.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\InternationalHealthInsurance.cs" />
+    <Compile Include="Pages\QuotePage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenarios\HealthQuote.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AboutPage.feature</DependentUpon>
+      <DependentUpon>HealthQuote.feature</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AboutPage.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scenarios\AboutPage.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>AboutPage.feature.cs</LastGenOutput>
-    </None>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="Scenarios\HealthQuote.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HealthQuote.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
