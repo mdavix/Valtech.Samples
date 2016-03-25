@@ -19,7 +19,7 @@ namespace Valtech.Samples.BG.AcceptanceTests.Scenarios
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute("SpecBind.Selenium.dll")]
-    public partial class BupaNavigationFeature
+    public partial class HealthQuoteFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace Valtech.Samples.BG.AcceptanceTests.Scenarios
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BupaNavigation", "\tIn order to avoid silly mistakes\r\n\tAs a Bupa Global user\r\n\tI want to be able to " +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Health Quote", "\tIn order to avoid silly mistakes\r\n\tAs a Bupa Global user\r\n\tI want to be able to " +
                     "navigate the site", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -47,9 +47,9 @@ namespace Valtech.Samples.BG.AcceptanceTests.Scenarios
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "BupaNavigation")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Health Quote")))
             {
-                Valtech.Samples.BG.AcceptanceTests.Scenarios.BupaNavigationFeature.FeatureSetup(null);
+                Valtech.Samples.BG.AcceptanceTests.Scenarios.HealthQuoteFeature.FeatureSetup(null);
             }
         }
         
@@ -70,12 +70,12 @@ namespace Valtech.Samples.BG.AcceptanceTests.Scenarios
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Bupa Quote Tool")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "BupaNavigation")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Step 1 Checks")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Health Quote")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void BupaQuoteTool()
+        public virtual void Step1Checks()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bupa Quote Tool", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Step 1 Checks", new string[] {
                         "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -99,27 +99,60 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Bupa Navigation")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "BupaNavigation")]
-        public virtual void BupaNavigation()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Full Quote")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Health Quote")]
+        public virtual void FullQuote()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bupa Navigation", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Full Quote", ((string[])(null)));
 #line 14
 this.ScenarioSetup(scenarioInfo);
 #line 15
- testRunner.Given("I navigated to the Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigated to the Quote page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
- testRunner.When("I choose International Health Insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I choose Global Health Insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table2.AddRow(new string[] {
+                        "country",
+                        "United Kingdom"});
 #line 17
- testRunner.Then("I am on the International Health Insurance page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 18
- testRunner.When("I choose Business Health Insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
- testRunner.Then("I am on the Business Health Insurance page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I enter data", ((string)(null)), table2, "When ");
 #line 20
- testRunner.When("I choose GetAQuote", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I choose Continue To Next Step", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
  testRunner.Then("I am on the Quote page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table3.AddRow(new string[] {
+                        "firstname",
+                        "Matt"});
+            table3.AddRow(new string[] {
+                        "secondname",
+                        "Davies"});
+            table3.AddRow(new string[] {
+                        "day",
+                        "14"});
+            table3.AddRow(new string[] {
+                        "month",
+                        "12"});
+            table3.AddRow(new string[] {
+                        "year",
+                        "1980"});
+            table3.AddRow(new string[] {
+                        "email",
+                        "1@bupaglobal.com"});
+            table3.AddRow(new string[] {
+                        "countrycode",
+                        "44"});
+            table3.AddRow(new string[] {
+                        "phonenumber",
+                        "712345678"});
+#line 22
+ testRunner.When("I enter data", ((string)(null)), table3, "When ");
 #line hidden
             this.ScenarioCleanup();
         }

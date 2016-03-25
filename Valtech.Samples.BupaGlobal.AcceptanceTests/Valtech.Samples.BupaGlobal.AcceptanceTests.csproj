@@ -97,11 +97,17 @@
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\InternationalHealthInsurance.cs" />
     <Compile Include="Pages\QuotePage.cs" />
+    <Compile Include="Pages\YourWellbeingPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenarios\HealthQuote.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HealthQuote.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Scenarios\Layout.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Layout.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +118,10 @@
     <None Include="Scenarios\HealthQuote.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>HealthQuote.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Scenarios\Layout.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Layout.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Choose>
