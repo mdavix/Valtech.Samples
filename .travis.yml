@@ -1,2 +1,4 @@
 language: csharp
 solution: Valtech.Samples.sln
+after_script:
+  - nunit-console Valtech.Samples.UnitTests/bin/Release/Valtech.Samples.UnitTests.dll
