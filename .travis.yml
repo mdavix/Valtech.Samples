@@ -1,4 +1,8 @@
 language: csharp
 solution: Valtech.Samples.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore Valtech.Samples.sln
 after_script:
   - nunit-console Valtech.Samples.UnitTests/bin/Release/Valtech.Samples.UnitTests.dll
