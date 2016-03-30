@@ -41,5 +41,14 @@ namespace Valtech.Samples.BG.AcceptanceTests.Pages
 
         [ElementLocator(CssSelector = "#phone")]
         public IWebElement PhoneNumber { get; set; }
+
+        [ElementLocator(CssSelector = "div.tickbox-privacy")]
+        public IWebElement PrivacyTickbox { get; set; }
+
+        [ElementLocator(CssSelector = "button.get-quote")]
+        public IWebElement GetQuoteButton { get; set; }
+
+        [ElementLocator(CssSelector = "div.go-to-summary")]
+        public IWebElement SeeThisPlan { get; set; }
     }
 }
