@@ -90,6 +90,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Pages\BGBasePage.cs" />
     <Compile Include="Pages\BusinessHealthInsurance.cs" />
+    <Compile Include="Pages\HealthInsuranceQuote.cs" />
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Pages\InternationalHealthInsurance.cs" />
     <Compile Include="Pages\QuotePage.cs" />
@@ -119,6 +120,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Layout.feature.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

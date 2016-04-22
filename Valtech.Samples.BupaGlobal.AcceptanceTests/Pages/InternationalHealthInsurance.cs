@@ -2,7 +2,7 @@
 
 namespace Valtech.Samples.BG.AcceptanceTests.Pages
 {
-    [PageNavigation("/en/International-Health-Insurance")]
+    [PageNavigation("/en/international-health-insurance")]
     public class InternationalHealthInsurance : BGBasePage
     {
     }

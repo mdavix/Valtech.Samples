@@ -68,13 +68,13 @@ namespace Valtech.Samples.BG.AcceptanceTests.Scenarios
         [NUnit.Framework.DescriptionAttribute("Step 1 Checks")]
         [NUnit.Framework.CategoryAttribute("SmokeTest")]
         [NUnit.Framework.CategoryAttribute("Nightly")]
-        [NUnit.Framework.CategoryAttribute("TFS-1234")]
+        [NUnit.Framework.CategoryAttribute("TFS1234")]
         public virtual void Step1Checks()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Step 1 Checks", new string[] {
                         "SmokeTest",
                         "Nightly",
-                        "TFS-1234"});
+                        "TFS1234"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -119,13 +119,16 @@ this.ScenarioSetup(scenarioInfo);
 #line 20
  testRunner.When("I choose Continue To Next Step", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
- testRunner.When("I wait to see Get Quote Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I wait for the HealthInsuranceQuote page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
- testRunner.Then("I am on the Quote page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I am on the HealthInsuranceQuote page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "Field",
                         "Value"});
+            table3.AddRow(new string[] {
+                        "Title",
+                        "Mr"});
             table3.AddRow(new string[] {
                         "firstname",
                         "Matt"});
@@ -152,11 +155,11 @@ this.ScenarioSetup(scenarioInfo);
                         "712345678"});
 #line 23
  testRunner.When("I enter data", ((string)(null)), table3, "When ");
-#line 33
- testRunner.When("I choose PrivacyTickbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 34
- testRunner.When("I choose GetQuoteButton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I choose PrivacyTickbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 35
+ testRunner.When("I choose GetQuoteButton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 36
  testRunner.Then("I wait to see See This Plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
